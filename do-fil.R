@@ -1,2 +1,10 @@
 rm(list=ls())
-base <- EAM_2020
+require(pacman)
+p_load(dplyr, tidyverse, ggplot2, stargazer, tidyr, rio, skimr, janitor)
+base_manufacturera_2020 <-  import("EAM_2020.dta")
+clean_names(base_manufacturera_2020)
+##Como trabajamos en un proyecto en Github, no es necesario establecer un directorio de trabajo
+Datos_IDC <-  import("Base_IDC_web_2022.xlsx", sheet= 3)
+clean_names(Datos_IDC)
+view(Datos_IDC)
+Datos_IDC_1 <-  Datos_IDC %>% filter(Año == 2020)
