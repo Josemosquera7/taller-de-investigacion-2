@@ -19,7 +19,6 @@ Datos_IDC_Final <- Datos_IDC_1 %>% rename(gestion_recursos = `INS-1-1`, capacida
 ## uniremos bases de datos con un left join co  base en el codigo_dane de departamento
 base_final <- left_join(x= base_manufacturera_final, y= Datos_IDC_Final, by=c("codigo_dane"))
 base_final_1 <- base_final %>% filter(valor_agregado > 0)
-base_final_2 <- base_final_1 %>% filter(total_trabajadores >= 50)
 view(base_final_1)
 ##base_final_1 es la base final que usaremos para realizar los análisis
 reg_1 <- lm(valor_agregado ~ IDC + gastostransp_productos, data = base_final_2)
