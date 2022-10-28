@@ -18,3 +18,5 @@ view(base_manufacturera_final)
 ##organizamos base de datos de indice departamental de competitividad
 Datos_IDC_1 <- Datos_IDC_1 %>% select(Departamento, Año, `INS-1-1`, `INS-2-2`, `INF-1-3`, `INF-2-1`, `INF-3-1`, `INF-3-2`, `NEG-2-2`,`LAB-1-1`, `LAB-2-1`, `TAM-1-1`, `TAM-2-1`, `INN-1-1`, `Puntaje general` )
 Datos_IDC_Final <- Datos_IDC_1 %>% rename(gestion_recursos = `INS-1-1`, capacidad_recaudo = `INS-2-2`, Cobertura_energia = `INF-1-3`, vias_primarias = `INF-2-1`, costo_transporte_interno = `INF-3-1`, costo_transporte_aduana = `INF-3-2`, densidad_empresarial = `NEG-2-2`, tasa_glob_participacion = `LAB-1-1`, brecha_laboral_genero = `LAB-2-1`, tamaño_mercado_interno = `TAM-1-1`, tamaño_mercado_externo = `TAM-2-1`, investigacion = `INN-1-1`, IDC = `Puntaje general`)
+## uniremos bases de datos con un left join co  base en el codigo_dane de departamento
+base_final <-  left_join(x=base_manufacturera_final,y=Datos_IDC_Final,by=c("codigo_dane))
