@@ -18,8 +18,9 @@ Datos_IDC_1 <- Datos_IDC_1 %>% select(codigo_dane, Departamento, Año, `INS-1-1`
 Datos_IDC_Final <- Datos_IDC_1 %>% rename(gestion_recursos = `INS-1-1`, capacidad_recaudo = `INS-2-2`, Cobertura_energia = `INF-1-3`, vias_primarias = `INF-2-1`, costo_transporte_interno = `INF-3-1`, costo_transporte_aduana = `INF-3-2`, densidad_empresarial = `NEG-2-2`, tasa_glob_participacion = `LAB-1-1`, brecha_laboral_genero = `LAB-2-1`, tamaño_mercado_interno = `TAM-1-1`, tamaño_mercado_externo = `TAM-2-1`, investigacion = `INN-1-1`, IDC = `Puntaje general`)
 ## uniremos bases de datos con un left join co  base en el codigo_dane de departamento
 base_final <- left_join(x= base_manufacturera_final, y= Datos_IDC_Final, by=c("codigo_dane"))
+view(base_final)
 base_final_1 <- base_final %>% filter(valor_agregado > 0)
-view(base_final_1)
+hist(base_final$valor_agregado)
 ##base_final_1 es la base final que usaremos para realizar los análisis
-reg_1 <- lm(valor_agregado ~ IDC + gastostransp_productos, data = base_final_2)
+reg_1 <- lm(densidad_empresarial ~ IDC + gastostransp_productos, data = base_final_1)
 summary(reg_1)
