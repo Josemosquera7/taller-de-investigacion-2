@@ -1,0 +1,29 @@
+
+<table style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td>productividad de la empresa</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">gastos transporte productos</td><td>8.317<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.186)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">vias primarias por cada 100 mil habitantes</td><td>-1,725,158.000<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(544,319.200)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">indice tamaño mercado interno</td><td>2,655,028.000<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(854,937.200)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">Indice Departamental de Competitividad</td><td>-8,580,795.000<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(2,135,785.000)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">Cobertura de energia</td><td>1,085,938.000</td></tr>
+<tr><td style="text-align:left"></td><td>(1,299,944.000)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>35,317,656.000<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(9,407,477.000)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>4,293</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.324</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.323</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>38,861,907.000 (df = 4287)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>411.012<sup>***</sup> (df = 5; 4287)</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
