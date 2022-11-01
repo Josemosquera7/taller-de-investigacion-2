@@ -21,5 +21,6 @@ Datos_IDC_Final <- transform(Datos_IDC_3, transporte_mercado_interno= as.numeric
 base_final <- left_join(x= base_manufacturera_final, y= Datos_IDC_Final, by=c("codigo_dane"))
 view(base_final)
 base_final_1 <- base_final %>% filter(valor_agregado > 0)
-base_final_2 <- base_final %>% filter(total_trabajadores > 10)
-export(base_final_2, "base_investigacion.xlsx")
+base_final_2 <- base_final_1 %>% filter(total_trabajadores > 10)
+base_final_3 <- base_final_2 %>% mutate(log_valagri = log(valor_agregado))
+export(base_final_3, "base_investigacion.xlsx")
