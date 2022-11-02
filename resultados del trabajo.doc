@@ -3,31 +3,37 @@
 <tr><td></td><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
 <tr><td style="text-align:left"></td><td>productividad de la empresa</td><td>logaritmo valor agregado</td></tr>
 <tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td></tr>
-<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">gastos transporte de insumos</td><td>21.528<sup>***</sup></td><td>0.00000<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.443)</td><td>(0.00000)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">gastos transporte insumos</td><td>21.528<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.443)</td><td></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">gastos transporte productos</td><td>8.213<sup>***</sup></td><td>0.00000<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.193)</td><td>(0.000)</td></tr>
+<tr><td style="text-align:left">gastos transporte producto</td><td>8.213<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.193)</td><td></td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">vias primarias por cada 100 mil habitantes</td><td>-494,713.300</td><td>0.038<sup>*</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(520,213.500)</td><td>(0.021)</td></tr>
+<tr><td style="text-align:left">log gastos transporte insumos</td><td></td><td>0.189<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.011)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">indice tamaño mercado interno</td><td>2,047,208.000<sup>**</sup></td><td>0.073<sup>*</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(941,985.600)</td><td>(0.039)</td></tr>
+<tr><td style="text-align:left">log gastos transporte producto</td><td></td><td>0.429<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.010)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Indice Departamental de Competitividad</td><td>-3,931,914.000<sup>*</sup></td><td>-0.214<sup>**</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(2,246,518.000)</td><td>(0.093)</td></tr>
+<tr><td style="text-align:left">vias primarias por cada 100 mil habitantes</td><td>-494,713.300</td><td>-0.036<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(520,213.500)</td><td>(0.020)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Cobertura de energia</td><td>-1,015,941.000</td><td>-0.033</td></tr>
-<tr><td style="text-align:left"></td><td>(1,136,775.000)</td><td>(0.047)</td></tr>
+<tr><td style="text-align:left">indice tamaño mercado interno</td><td>2,047,208.000<sup>**</sup></td><td>0.082<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(941,985.600)</td><td>(0.036)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Constant</td><td>24,269,045.000<sup>***</sup></td><td>15.609<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(9,140,830.000)</td><td>(0.377)</td></tr>
+<tr><td style="text-align:left">Indice Departamental de Competitividad</td><td>-3,931,914.000<sup>*</sup></td><td>-0.170<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(2,246,518.000)</td><td>(0.090)</td></tr>
 <tr><td style="text-align:left"></td><td></td><td></td></tr>
-<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>4,653</td><td>4,653</td></tr>
-<tr><td style="text-align:left">R<sup>2</sup></td><td>0.513</td><td>0.234</td></tr>
-<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.512</td><td>0.233</td></tr>
-<tr><td style="text-align:left">Residual Std. Error (df = 4646)</td><td>39,529,933.000</td><td>1.631</td></tr>
-<tr><td style="text-align:left">F Statistic (df = 6; 4646)</td><td>815.814<sup>***</sup></td><td>236.745<sup>***</sup></td></tr>
+<tr><td style="text-align:left">Cobertura de energia</td><td>-1,015,941.000</td><td>-0.077<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1,136,775.000)</td><td>(0.044)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>24,269,045.000<sup>***</sup></td><td>9.734<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(9,140,830.000)</td><td>(0.371)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>4,653</td><td>2,227</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.513</td><td>0.595</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.512</td><td>0.593</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>39,529,933.000 (df = 4646)</td><td>1.136 (df = 2220)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>815.814<sup>***</sup> (df = 6; 4646)</td><td>542.511<sup>***</sup> (df = 6; 2220)</td></tr>
 <tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="2" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
 </table>
