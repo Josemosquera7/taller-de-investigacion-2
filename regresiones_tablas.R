@@ -6,6 +6,38 @@ base_trabajo_filtro <- import("Build/Outputs/base_investigación_filtro_gastostr
 
 estadisticas_d1 <- base_trabajo[c("valor_agregado", "gastostransporte_insumos", "gastostransp_productos", "vias_primarias", "tamaño_mercado_interno" , "IDC" , "Cobertura_energia")]
 stargazer(estadisticas_d1, type="html", title="Tabla 1:Estadisiticas descriptivas", out="Analysis/Tablas/descriptivas1.doc")
+
+#Graficas
+png("Analysis/Figuras/Grafico de dispersion Gastos transporte insumos vs Valor agregado")
+ggplot(base_trabajo, aes(x=log_gastostrans_insumos, y=log_valagri)) +
+  geom_point() +
+  labs (x="Gastos trasnporte insumos", y="Valor agregado") +
+  geom_smooth(method="lm")+ggtitle("Grafico 1: Log gastos trasnporte insumos vs log Valor agregado")
+dev.off()
+
+png("Analysis/Figuras/Histograma del tamaño del mercado interno")
+ggplot(base_trabajo, aes(x=tamaño_mercado_interno))+
+  geom_histogram(color="blue", fill="blue", alpha=0.75,bins=25, position="identity")+
+  scale_x_continuous(name="Indice Tamaño de mercado Interno")+
+  scale_y_continuous(name="Frecuencua")+
+  ggtitle("Grafico 2: Histograma Tamaño de mercado Interno")
+dev.off()
+
+png("Analysis/Figuras/Histograma indice de vias primarias")
+ggplot(base_trabajo, aes(x=vias_primarias))+
+  geom_histogram(color="red", fill="red", alpha=0.75,bins=25, position="identity")+
+  scale_x_continuous(name="Vias primarias por cada 100 mil habitantes")+
+  scale_y_continuous(name="Frecuencua")+
+  ggtitle("Grafico 3: Histograma Vias primarias")
+dev.off()
+
+png("Analysis/Figuras/Grafico de dispersion gastos de transporte de products vs valor agregado")
+ggplot(base_trabajo, aes(x=log_gastostrans_productos, y=log_valagri)) +
+  geom_point() +
+  labs (x="Gastos trasnporte productos", y="Valor agregado") +
+  geom_smooth(method="lm")+ggtitle("Grafico 4: Log gastos trasnporte productos vs log Valor agregado")
+dev.off()
+
 #Ahora estimaremos el modelo grande de nuestro proyecto
 reg_1 <- lm(valor_agregado ~  gastostransporte_insumos + gastostransp_productos + vias_primarias +  tamaño_mercado_interno + IDC + Cobertura_energia, data = base_trabajo )
 reg_1
