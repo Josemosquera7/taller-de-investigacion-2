@@ -4,6 +4,8 @@ p_load(dplyr, tidyverse, ggplot2, stargazer, tidyr, rio, skimr, janitor)
 base_trabajo <-  import("base_investigacion.xlsx")
 base_trabajo_filtro <- import("base_investigación_filtro_gastostransporte.xlsx")
 
+estadisticas_d1 <- base_trabajo[c("valor_agregado", "gastostransporte_insumos", "gastostransp_productos", "vias_primarias", "tamaño_mercado_interno" , "IDC" , "Cobertura_energia")]
+stargazer(estadisticas_d1, type="html", title="Tabla 1:Estadisiticas descriptivas", out="output/descriptivas1.doc")
 #Ahora estimaremos el modelo grande de nuestro proyecto
 reg_1 <- lm(valor_agregado ~  gastostransporte_insumos + gastostransp_productos + vias_primarias +  tamaño_mercado_interno + IDC + Cobertura_energia, data = base_trabajo )
 reg_1
