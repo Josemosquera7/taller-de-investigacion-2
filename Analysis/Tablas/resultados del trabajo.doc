@@ -1,0 +1,39 @@
+
+<table style="text-align:center"><tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="3"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="3" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="2">productividad de la empresa</td><td>logaritmo valor agregado</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">gastos transporte insumos</td><td>21.528<sup>***</sup></td><td>22.687<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.443)</td><td>(0.561)</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">gastos transporte producto</td><td>8.213<sup>***</sup></td><td>6.934<sup>***</sup></td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.193)</td><td>(0.260)</td><td></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">log gastos transporte insumos</td><td></td><td></td><td>0.189<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.011)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">log gastos transporte producto</td><td></td><td></td><td>0.429<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.010)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">vias primarias por cada 100 mil habitantes</td><td>-494,713.300</td><td>-1,138,339.000</td><td>-0.036<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(520,213.500)</td><td>(875,945.000)</td><td>(0.020)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">indice tamaño mercado interno</td><td>2,047,208.000<sup>**</sup></td><td>2,391,506.000</td><td>0.082<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(941,985.600)</td><td>(1,545,925.000)</td><td>(0.036)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Indice Departamental de Competitividad</td><td>-3,931,914.000<sup>*</sup></td><td>-4,058,133.000</td><td>-0.170<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(2,246,518.000)</td><td>(3,835,387.000)</td><td>(0.090)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Cobertura de energia</td><td>-1,015,941.000</td><td>-2,185,236.000</td><td>-0.077<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1,136,775.000)</td><td>(1,877,215.000)</td><td>(0.044)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>24,269,045.000<sup>***</sup></td><td>37,830,383.000<sup>**</sup></td><td>9.734<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(9,140,830.000)</td><td>(14,978,499.000)</td><td>(0.371)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>4,653</td><td>2,227</td><td>2,227</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.513</td><td>0.549</td><td>0.595</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.512</td><td>0.548</td><td>0.593</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>39,529,933.000 (df = 4646)</td><td>48,550,134.000 (df = 2220)</td><td>1.136 (df = 2220)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>815.814<sup>***</sup> (df = 6; 4646)</td><td>450.607<sup>***</sup> (df = 6; 2220)</td><td>542.511<sup>***</sup> (df = 6; 2220)</td></tr>
+<tr><td colspan="4" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="3" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>

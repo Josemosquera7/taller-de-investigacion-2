@@ -1,10 +1,10 @@
 rm(list=ls())
 require(pacman)
 p_load(dplyr, tidyverse, ggplot2, stargazer, tidyr, rio, skimr, janitor)
-base_manufacturera_2018 <-  import("EAM_2018.dta")
+base_manufacturera_2018 <-  import("Build/Inputs/EAM_2018.dta")
 clean_names(base_manufacturera_2018)
 ##Como trabajamos en un proyecto en Github, no es necesario establecer un directorio de trabajo
-Datos_IDC <-  import("Base_IDC_web_actualizado.xlsx", sheet= 3)
+Datos_IDC <-  import("Build/Inputs/Base_IDC_web_actualizado.xlsx", sheet= 3)
 clean_names(Datos_IDC)
 Datos_IDC_1 <-  Datos_IDC %>% filter(Año == 2018)
 ##dejamos las variables de interés para la encuesta manufacturera
@@ -28,5 +28,5 @@ base_final_1 <- base_final %>% filter(valor_agregado > 0) %>%
 base_final_2 <- base_final_1 %>%
                 filter(gastostransp_productos > 0 ) %>% 
                filter(gastostransporte_insumos > 0)
-export(base_final_1, "base_investigacion.xlsx")
-export(base_final_2, "base_investigación_filtro_gastostransporte.xlsx")
+export(base_final_1, "Build/Outputs/base_investigacion.xlsx")
+export(base_final_2, "Build/Outputs/base_investigación_filtro_gastostransporte.xlsx")
