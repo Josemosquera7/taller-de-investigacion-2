@@ -57,5 +57,7 @@ stargazer(reg_1, reg_2, reg_3,
           out= "Analysis/Tablas/resultados del trabajo.doc")
 
 ##Crear mapas usando datos espaciales en r
-col <- st_read("MGN_DPTO_POLITICO.shp") %>% rename(codigo_dane = DPTO_CCDGO)
-base_trabajo_espacial <- base_trabajo_filtro %>% lef
+col <- st_read("MGN_DPTO_POLITICO.shp")
+base_trabajo_espacial <- import("Build/Inputs/Base_IDC_web_actualizado.xlsx", sheet=3) %>% filter(Año== 2018) %>%
+  rename(DPTO_CCDGO =codigo_dane)
+
