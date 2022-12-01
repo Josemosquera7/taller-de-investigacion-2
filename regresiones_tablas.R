@@ -1,6 +1,13 @@
 rm(list=ls())
 require(pacman)
-p_load(dplyr, tidyverse, ggplot2, stargazer, tidyr, rio, skimr, janitor)
+p_load(dplyr, tidyverse, ggplot2, stargazer, tidyr, rio, skimr, janitor, tmaptools,
+       sf, 
+       leaflet,
+       ggsn, 
+       osmdata,
+       ggplot2, 
+       ggmap)
+
 base_trabajo <-  import("Build/Outputs/base_investigacion.xlsx")
 base_trabajo_filtro <- import("Build/Outputs/base_investigación_filtro_gastostransporte.xlsx")
 
@@ -49,3 +56,6 @@ stargazer(reg_1, reg_2, reg_3,
           covariate.labels = c("gastos transporte insumos", "gastos transporte producto", "log gastos transporte insumos", "log gastos transporte producto", "vias primarias por cada 100 mil habitantes", "indice tamaño mercado interno", "Indice Departamental de Competitividad", "Cobertura de energia"),
           out= "Analysis/Tablas/resultados del trabajo.doc")
 
+##Crear mapas usando datos espaciales en r
+col <- st_read("MGN_DPTO_POLITICO.shp") %>% rename(codigo_dane = DPTO_CCDGO)
+base_trabajo_espacial <- base_trabajo_filtro %>% lef
