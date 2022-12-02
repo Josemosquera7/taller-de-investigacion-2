@@ -6,7 +6,8 @@ p_load(dplyr, tidyverse, ggplot2, stargazer, tidyr, rio, skimr, janitor, tmaptoo
        ggsn, 
        osmdata,
        ggplot2, 
-       ggmap)
+       ggmap,
+       viridis)
 
 base_trabajo <-  import("Build/Outputs/base_investigacion.xlsx")
 base_trabajo_filtro <- import("Build/Outputs/base_investigación_filtro_gastostransporte.xlsx")
@@ -57,7 +58,13 @@ stargazer(reg_1, reg_2, reg_3,
           out= "Analysis/Tablas/resultados del trabajo.doc")
 
 ##Crear mapas usando datos espaciales en r
-col <- st_read("MGN_DPTO_POLITICO.shp")
+col <- st_read("Build/Inputs/MGN_DPTO_POLITICO.shp") %>% select(DPTO_CCDGO) %>% mutate(DPTO_CCDGO =as.numeric(DPTO_CCDGO))
 base_trabajo_espacial <- import("Build/Inputs/Base_IDC_web_actualizado.xlsx", sheet=3) %>% filter(Año== 2018) %>%
-  rename(DPTO_CCDGO =codigo_dane)
-
+  rename(DPTO_CCDGO =codigo_dane) %>% select(DPTO_CCDGO, Puntaje_general)
+bases_unidas <- left_join(col,base_trabajo_espacial, "DPTO_CCDGO")
+mapa <- ggplot() +
+        geom_sf(data=bases_unidas,aes(fill=Puntaje_general)) +
+      scale_fill_viridis(direction=-1, option = "F") + theme_test()
+mapa
+##Guardamos el mapa
+ggsave("Build/Outputs/departamentos por IDC.png", mapa)
