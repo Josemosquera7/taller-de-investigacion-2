@@ -46,6 +46,11 @@ ggplot(base_trabajo, aes(x=log_gastostrans_productos, y=log_valagri)) +
   geom_smooth(method="lm")+ggtitle("Grafico 4: Log gastos trasnporte productos vs log Valor agregado")
 dev.off()
 
+grafica3 <- ggplot(base_trabajo_filtro, aes(x=IDC, y=valor_agregado))+
+            geom_point()+
+            labs(x="Indice departamental de competitividad", y="Valor Agregado")+
+           geom_smooth(method="lm")+
+           ggtitle("Grafico 5: Valor agregado vs Indice departamental de competitividad")
 #Ahora estimaremos el modelo grande de nuestro proyecto
 reg_1 <- lm(valor_agregado ~  gastostransporte_insumos + gastostransp_productos + vias_primarias +  tamaño_mercado_interno + IDC + Cobertura_energia, data = base_trabajo )
 reg_1
